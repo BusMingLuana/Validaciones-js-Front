@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validando formularios</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+
+    <main>
+        <form action="" method="get" class="formulario" id="formulario">
+
+            <!-- Grupo Nombre -->
+         <div class="formulario__grupo"  id="grupo__nombre">
+             <label for="name" class="formulario__label">Nombre</label>
+             <div class="formulario__grupo-input">
+                 <input type="text" class="formulario__input" name="name" id="name" placeholder="Nombre" required>
+                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                 <p class="formulario__input-error">El nombre es obligatorio y debe contener al menos 2 caracteres.</p>
+             </div>
+         </div>
+
+
+          <!-- Grupo Apellido -->
+          <div class="formulario__grupo"  id="grupo__apellido">
+            <label for="apellido" class="formulario__label">Apellido</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Apellido" required>
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                <p class="formulario__input-error">El Apellido es obligatorio y debe contener al menos 2 caracteres.</p>
+            </div>
+        </div>
+
+
+
+           <!-- Grupo password -->
+           <div class="formulario__grupo"  id="grupo__password">
+            <label for="password" class="formulario__label">Contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password" id="password" required>
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                <p class="formulario__input-error">La contraseña debe tener al menos 8 caracteres y contener una mayuscula, una minuscula , un número y un caractér especial.</p>
+            </div>
+        </div>
+
+        
+           <!-- Grupo password 2-->
+           <div class="formulario__grupo"  id="grupo__password2">
+            <label for="password2" class="formulario__label">Repetir contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password2" class="formulario__input" name="password2" id="password2" required>
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+            </div>
+        </div>
+
+
+           <!-- Grupo Email -->
+           <div class="formulario__grupo"  id="grupo__correo">
+            <label for="correo" class="formulario__label">Email</label>
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com" required>
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                <p class="formulario__input-error">Debes ingresar un email valido.</p>
+            </div>
+        </div>
+
+
+           <!-- Grupo Descripcion -->
+           <div class="formulario__grupo"  id="grupo__description">
+            <label for="description" class="formulario__label">Descripcion</label>
+            <div class="formulario__grupo-input">
+                <textarea name="description" id="description" cols="30" rows="10"  class="formulario__input"></textarea>
+
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                <p class="formulario__input-error">La descripcion  debe contener al menos 20 caracteres.</p>
+            </div>
+        </div>
+
+
+           <!-- Grupo Imagen -->
+            <!--  -->
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
+            </div>
+       </form>
+</main>
+
+
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>

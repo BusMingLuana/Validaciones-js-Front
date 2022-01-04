@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+ body{
+     background: rgb(136, 152, 182);
+ }
+
+
+ main{
+     max-width: 800px;
+     width: 90%;
+     margin: auto;
+     padding: 40px;
+ }
